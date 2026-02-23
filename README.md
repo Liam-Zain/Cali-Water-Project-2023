@@ -3,10 +3,10 @@
  This project entails a comprehensive analysis of compliance of stream water at California monitor stations for the year 2023. It seeks to identify critical exceedances of EPA guidelines and limits on major inorganic toxins and contaminants, namely Arsenic, Copper, Fluoride, Lead, Mercury, Nitrates, Selenium, Uranium as well as water turbidity. These specific contaminants were chosen as they pose high level acute and chronic toxicity threats to individuals if consumed and should, therefore be closely monitored.
 
  This analysis culminates with a dashboard showing distribution of problem stations, areas of repeated limit exceedances and a breakdown of how often each contaminant shows level of exceedance out of the total number of tests drawn for the year.
- 
-**NOTE** : This project only aims to analyze frequency of non conformance of stream water at stations to EPA contaminant limits and does not aim to analyze correlation between factors or identify potential causes for said non-conformances.
 
 ## ![Dashboard Overview](./Images/California_Water_Quality_2023_Dashboard.png)
+
+**NOTE** : This project only aims to analyze frequency of non conformance of stream water at stations to EPA contaminant limits and does not aim to analyze correlation between factors or identify potential causes for said non-conformances.
 
  ## Methodology
  This project follows a simple yet detailed roadmap from raw, sourced data to a simple to follow, interactive vizualization which can both easily display findings whilst also paving the way for further analyses.
@@ -25,6 +25,7 @@
   4. ### Data Analysis and Summarization
      Python Pandas was then used to summarize the data into pivot tables which were then further edited in order to calculate the exceedance rate of each station, as well as how severe the non-conformances were relative to the MCL (Maximum Contaminant Limit)
    
+
 
 
 
