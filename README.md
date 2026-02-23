@@ -28,5 +28,12 @@
   5. ### Data Visualization with Tableau
      The summmary table was used to create the dashboard shown above. [Click here](https://public.tableau.com/app/profile/liam.dujon/viz/WaterQualityDashboard_17712144790070/CaliforniaWaterQuality-HighRiskStations2023) to interact with it.
 
+## Technical Definitions
+ 1. ### Severity Ratio
+    The summary table compiles the total numbber of samples taken at a specific station for a specific contaminant. The highest recorded value (peak_result) is taken and compared to the MCL (mcl_value). The severity ratio is then calculated and categorized as follows:
+    $$severity ratio = \frac{\text{peak result}}{\text{mcl value}}$$
+    - **Compliant:** Severity Ratio $\le 1$
+    - **Exceedant:** $1 <$ Severity Ratio $\le 5$
+    - **Critical:** Severity Ratio $> 5$
 
 
