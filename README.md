@@ -9,5 +9,8 @@
  
  1. ### Sourcing Raw Data
     The raw data was sourced from the [Water Quality Portal](https://www.waterqualitydata.us/#countrycode=US&statecode=US%3A06&siteType=Stream&sampleMedia=Water&mimeType=csv&sorted=no&providers=NWIS&providers=STORET) set to extract data from the stations in California for the year 2023 on stream water. This yields two CSV files containining metadata about the individual stations as well as test data throughout the year from said stations.
-    ![Raw Station Data](/Projects/Water%20Quality%20Project/station.csv)
-    
+    - [Raw Station Data](./Data/station.csv)
+    - [Raw Water Data](./Data/resultphyschem.zip)
+
+2. ### Data Extraction
+   The raw CSV files were uploaded to an SQL Database after which, columns from both tables were extracted and merged into one [singular table](./Data/v_water_quality_analysis), holding all the information needed for the analysis. This table was then merged with a pre-made table showing the 
