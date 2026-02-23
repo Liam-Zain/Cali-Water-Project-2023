@@ -26,7 +26,7 @@
      Python Pandas was then used to summarize the data into pivot tables which were then further edited in order to calculate the exceedance rate of each station, as well as how severe the non-conformances were relative to the MCL (Maximum Contaminant Limit). The final [summary table](./Data/summary_data.csv) was exported to be used in Tableau for data vizualization.
 
   5. ### Data Visualization with Tableau
-     The summmary table was used to create the dashboard shown above. [Click here](https://public.tableau.com/app/profile/liam.dujon/viz/WaterQualityDashboard_17712144790070/CaliforniaWaterQuality-HighRiskStations2023) to interact with it.
+     The summmary table was used to create the dashboard shown above. The dashboard consists of a distribution map, made with the aid of latitudinal and longitudinal data, showing the where the stations are located to help identify locational trends of conformity or lack thereof. It also includes a bar graph showing the top 10 stations with the highest recorded severity ratios as well as the contaminant in question it corresponds to. The final visualization is a Proportional Symbol chart which shows the most common compliance status of each individual contaminant as a part of the whole of the total number of tests for said contaminant done for 2023. [Click here](https://public.tableau.com/app/profile/liam.dujon/viz/WaterQualityDashboard_17712144790070/CaliforniaWaterQuality-HighRiskStations2023) to interact with it.
 
 ## Technical Definitions
  1. ### Severity Ratio
@@ -40,6 +40,7 @@
     The original data had the concentration of nitrates expressed in 2 different forms - concentration as nitrate and concentration as nitrogen. For the sake of consistency, all instances where concentration was expressed as 'concentration as nitrogen' were converted to 'concentration as nitrate' using the following formula:
     
     $$\text{mg/L as } NO_3 = (\text{mg/L as N}) \times 4.427$$
+
 
 
 
