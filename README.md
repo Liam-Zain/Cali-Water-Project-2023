@@ -6,7 +6,7 @@
  
 **NOTE** : This project only aims to analyze frequency of non conformance of stream water at stations to EPA contaminant limits and does not aim to analyze correlation between factors or identify potential causes for said non-conformances.
 
-## [Dashboard Overview](./Images/California Water Quality - High Risk Stations)
+## [Dashboard Overview](./Images/California Water Quality 2023 Dashboard.png)
 
  ## Methodology
  This project follows a simple yet detailed roadmap from raw, sourced data to a simple to follow, interactive vizualization which can both easily display findings whilst also paving the way for further analyses.
@@ -25,4 +25,5 @@
   4. ### Data Analysis and Summarization
      Python Pandas was then used to summarize the data into pivot tables which were then further edited in order to calculate the exceedance rate of each station, as well as how severe the non-conformances were relative to the MCL (Maximum Contaminant Limit)
    
+
 
