@@ -1,10 +1,16 @@
 # California Water Quality Analysis 2023
  
- This project entails a comprehensive analysis of compliance of stream water at California monitor stations for the year 2023. It seeks to identify critical exceedances of EPA guidelines and limits on major inorganic toxins and contaminants, namely Arsenic, Copper, Fluoride, Lead, Mercury, Nitrates, Selenium, Uranium as well as water turbidity. These specific contaminants were chosen as they pose high level acute and chronic toxicity threats to individuals if consumed and should, therefore be closely monitored.
+ This project entails a comprehensive analysis of compliance of stream water at California monitor stations for the year 2023. It seeks to identify critical exceedances of EPA guidelines and limits on major inorganic toxins and contaminants, namely Arsenic, Copper, Fluoride, Lead, Mercury, Nitrates, Selenium, Uranium as well as water turbidity. These specific contaminants were chosen as they pose high level acute and chronic toxicity threats to individuals if consumed and should, therefore be closely monitored and corrective action to be discussed in the event of heavy non-conformances.
 
  This analysis culminates with a dashboard showing distribution of problem stations, areas of repeated limit exceedances and a breakdown of how often each contaminant shows level of exceedance out of the total number of tests drawn for the year.
 
 ![Dashboard Overview](./Images/California_Water_Quality_2023_Dashboard.png)
+
+## Key Insights
+- Turbidity of stream water is the most problematic aspect of stream water to be addressed with a 68% exceedance rate across the whole state and 55% of non-conformities being critical. The most turbid water seems to be situated in the Del Norte County.
+- Fluoride, Selenium and Uranium levels across the state for the year were fully compliant with EPA limts.
+- There are extremely high levels of mercury in the stream water in the Lake County with 100% of all mercury non-conformities hailing from that region. 85% of all recorded non-conformities of mercury were critical with mostly all values having exorbitantly high severity ratios.
+- Arsenic, Copper and Nitrates all had relatively low exceedance rates (9% for Arsenic, 2% for Copper and 2% for Nitrates). Arsenic is still a highly toxic contaminant and it along with lead and mercury (20% and 17.5% respectively) should still be monitored and acted on to minimize non-conformances.
 
 **NOTE** : This project only aims to analyze frequency of non conformance of stream water at stations to EPA contaminant limits and does not aim to analyze correlation between factors or identify potential causes for said non-conformances.
 
@@ -40,6 +46,7 @@
     The original data had the concentration of nitrates expressed in 2 different forms - concentration as nitrate and concentration as nitrogen. For the sake of consistency, all instances where concentration was expressed as 'concentration as nitrogen' were converted to 'concentration as nitrate' using the following formula:
     
     $$\text{mg/L as } NO_3 = (\text{mg/L as N}) \times 4.427$$
+
 
 
 
