@@ -31,12 +31,14 @@
 ## Technical Definitions
  1. ### Severity Ratio
     The summary table compiles the total numbber of samples taken at a specific station for a specific contaminant. The highest recorded value (peak_result) is taken and compared to the MCL (mcl_value). The severity ratio is then calculated and categorized as follows:
-    $$severity ratio = \frac{\text{peak result}}{\text{mcl value}}$$
+    $$\text{severity ratio} = \frac{\text{peak result}}{\text{mcl value}}$$
     - **Compliant:** Severity Ratio $\le 1$
     - **Exceedant:** $1 <$ Severity Ratio $\le 5$
     - **Critical:** Severity Ratio $> 5$
 
  2. ### Concentration of Nitrates
     The original data had the concentration of nitrates expressed in 2 different forms - concentration as nitrate and concentration as nitrogen. For the sake of consistency, all instances where concentration was expressed as 'concentration as nitrogen' were converted to 'concentration as nitrate' using the following formula:
+    
     $$\text{Nitrate as } NO_3 = (\text{Nitrate as N}) \times 4.427$$
+
 
