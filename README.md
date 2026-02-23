@@ -39,6 +39,7 @@
  2. ### Concentration of Nitrates
     The original data had the concentration of nitrates expressed in 2 different forms - concentration as nitrate and concentration as nitrogen. For the sake of consistency, all instances where concentration was expressed as 'concentration as nitrogen' were converted to 'concentration as nitrate' using the following formula:
     
-    $$\text{Nitrate as } NO_3 = (\text{Nitrate as N}) \times 4.427$$
+    $$\text{mg/L as } NO_3 = (\text{mg/L as N}) \times 4.427$$
+
 
 
