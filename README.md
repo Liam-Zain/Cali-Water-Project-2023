@@ -47,6 +47,10 @@
     
     $$\text{mg/L as } NO_3 = (\text{mg/L as N}) \times 4.427$$
 
+ 3. ### Proxy Units
+    The standard units for Turbidity is NTU, however there are other units present in the original datasets. For the sake of simplicity and standardization, these units are treated as 1:1 with NTU (hence the 'is_proxy_unit' column in the master file).
+
+
 
 
 
