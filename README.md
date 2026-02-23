@@ -3,6 +3,10 @@
  This project entails a comprehensive analysis of compliance of stream water at California monitor stations for the year 2023. It seeks to identify critical exceedances of EPA guidelines and limits on major inorganic toxins and contaminants, namely Arsenic, Copper, Fluoride, Lead, Mercury, Nitrates, Selenium, Uranium as well as water turbidity. These specific contaminants were chosen as they pose high level acute and chronic toxicity threats to individuals if consumed and should, therefore be closely monitored.
 
  This analysis culminates with a dashboard showing distribution of problem stations, areas of repeated limit exceedances and a breakdown of how often each contaminant shows level of exceedance out of the total number of tests drawn for the year.
+ 
+**NOTE** : This project only aims to analyze frequency of non conformance of stream water at stations to EPA contaminant limits and does not aim to analyze correlation between factors or identify potential causes for said non-conformances.
+
+## [Dashboard Overview](./Images/California Water Quality - High Risk Stations)
 
  ## Methodology
  This project follows a simple yet detailed roadmap from raw, sourced data to a simple to follow, interactive vizualization which can both easily display findings whilst also paving the way for further analyses.
@@ -12,5 +16,13 @@
     - [Raw Station Data](./Data/station.csv)
     - [Raw Water Data](./Data/resultphyschem.zip)
 
-2. ### Data Extraction
-   The raw CSV files were uploaded to an SQL Database after which, columns from both tables were extracted and merged into one [singular table](./Data/v_water_quality_analysis), holding all the information needed for the analysis. This table was then merged with a pre-made table showing the 
+ 2. ### Data Extraction
+    The raw CSV files were uploaded to an SQL Database after which, columns from both tables were extracted and merged into one [singular table](./Data/v_water_quality_analysis), holding all the information needed for the analysis. This table was then merged with a [pre-made table showing the acceptable limit for contaminants by the EPA](./Data/health_standards.csv). This new table was then saved to be used as the "master file".
+   
+ 3. ### Data Cleaning, Validation and Standardization
+    The [master file was then taken into Excel in order to do minor cleaning such as identifying and removing blank rows, as well as standardizing data values across contaminants to match with EPA limit values for analysis of exceedance](.Data/water_quality_master_file.csv).
+
+  4. ### Data Analysis and Summarization
+     Python Pandas was then used to summarize the data into pivot tables which were then further edited in order to calculate the exceedance rate of each station, as well as how severe the non-conformances were relative to the MCL (Maximum Contaminant Limit)
+   
+
