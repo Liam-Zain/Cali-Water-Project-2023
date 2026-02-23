@@ -11,20 +11,21 @@
  ## Methodology
  This project follows a simple yet detailed roadmap from raw, sourced data to a simple to follow, interactive vizualization which can both easily display findings whilst also paving the way for further analyses.
  
- 1. ### Sourcing Raw Data
+  1. ### Sourcing Raw Data
     The raw data was sourced from the [Water Quality Portal](https://www.waterqualitydata.us/#countrycode=US&statecode=US%3A06&siteType=Stream&sampleMedia=Water&mimeType=csv&sorted=no&providers=NWIS&providers=STORET) set to extract data from the stations in California for the year 2023 on stream water. This yields two CSV files containining metadata about the individual stations as well as test data throughout the year from said stations.
     - [Raw Station Data](./Data/station.csv)
     - [Raw Water Data](./Data/resultphyschem.zip)
 
- 2. ### Data Extraction
+  2. ### Data Extraction
     The raw CSV files were uploaded to an SQL Database after which, columns from both tables were extracted and merged into one [singular table](./Data/v_water_quality_analysis), holding all the information needed for the analysis. This table was then merged with a [pre-made table showing the acceptable limit for contaminants by the EPA](./Data/health_standards.csv). This new table was then saved to be used as the "master file".
    
- 3. ### Data Cleaning, Validation and Standardization
+  3. ### Data Cleaning, Validation and Standardization
     The [master file](.Data/water_quality_master_file.csv) was then taken into Excel in order to do minor cleaning such as identifying and removing blank rows, as well as standardizing data values across contaminants to match with EPA limit values for analysis of exceedance. The latter was accomplished throught the use of nested IF statements to identify the multiplicative factor relative to mg/L (standard unit). 
 
- 4. ### Data Analysis and Summarization
+   4. ### Data Analysis and Summarization
      Python Pandas was then used to summarize the data into pivot tables which were then further edited in order to calculate the exceedance rate of each station, as well as how severe the non-conformances were relative to the MCL (Maximum Contaminant Limit). The final [summary table](./Data/summary_data.csv) was exported to be used in Tableau for data vizualization.
 
- 5. ### Data Visualization with Tableau
-     
+   5. ### Data Visualization with Tableau
+     The summmary table was used to create the dashboard shown above. [Click here](https://public.tableau.com/app/profile/liam.dujon/viz/WaterQualityDashboard_17712144790070/CaliforniaWaterQuality-HighRiskStations2023) to interact with it.
+
 
