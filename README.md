@@ -7,7 +7,7 @@
 ![Dashboard Overview](./Images/California_Water_Quality_2023_Dashboard.png)
 
 ## Key Insights
-- Turbidity of stream water is the most problematic aspect of stream water to be addressed with a 68% exceedance rate across the whole state and 55% of non-conformities being critical. The most turbid water seems to be situated in the Del Norte County.
+- Turbidity is the most problematic aspect of stream water to be addressed with a 68% exceedance rate across the whole state and 55% of non-conformities being critical. The most turbid water seems to be situated in the Del Norte County.
 - Fluoride, Selenium and Uranium levels across the state for the year were fully compliant with EPA limts.
 - There are extremely high levels of mercury in the stream water in the Lake County with 100% of all mercury non-conformities hailing from that region. 85% of all recorded non-conformities of mercury were critical with mostly all values having exorbitantly high severity ratios.
 - Arsenic, Copper and Nitrates all had relatively low exceedance rates (9% for Arsenic, 2% for Copper and 2% for Nitrates). Arsenic is still a highly toxic contaminant and it along with lead and mercury (20% and 17.5% respectively) should still be monitored and acted on to minimize non-conformances.
@@ -49,6 +49,7 @@
 
  3. ### Proxy Units
     The standard units for Turbidity is NTU, however there are other units present in the original datasets. For the sake of simplicity and standardization, these units are treated as 1:1 with NTU (hence the 'is_proxy_unit' column in the master file).
+
 
 
 
